@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dang Minh Hao | Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Dang Minh Hao</h1>
+            <p class="title">Software Engineer | Java Backend Developer</p>
+            <p class="subtitle">Saigon University (GPA: 3.28/4.0)</p>
+
+            <div class="social-links">
+                <a href="https://github.com/haolor" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://leetcode.com/haolor" target="_blank" title="LeetCode">
+                    <i class="fas fa-code"></i>
+                </a>
+                <a href="https://www.facebook.com/hao.long.3139" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="mailto:dangminhhao365@gmail.com" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Software Engineering student (Expected Graduation: Dec 2025) with a strong foundation in Java Core, DSA,
+                and OOP (solved 500+ problems on LeetCode).
+                Experienced in building complex full-stack E-commerce systems using <strong>Spring Boot 3</strong>,
+                <strong>Microservices patterns</strong> (Redis caching, Distributed locking), and deploying with
+                Docker/CI/CD.
+                Capable of conducting professional interviews entirely in English.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <span class="skill-tag highlight">Java (Spring Boot, Security, JPA)</span>
+                <span class="skill-tag highlight">Redis & Caching</span>
+                <span class="skill-tag highlight">Docker & CI/CD</span>
+                <span class="skill-tag">PostgreSQL / MySQL</span>
+                <span class="skill-tag">ReactJS & Material-UI</span>
+                <span class="skill-tag">RESTful APIs</span>
+                <span class="skill-tag">Git Workflow</span>
+                <span class="skill-tag">English B2</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-title">
+                        <h3>Ecommerce - Food Ordering</h3>
+                        <div class="tech-stack">Spring Boot 3 • ReactJS • PostgreSQL • Redis • Docker • VNPay</div>
+                    </div>
+                    <span class="project-role">Backend Lead & System Design</span>
+                </div>
+                <p>Full-stack web application for online food ordering with JWT authentication, complex order workflows,
+                    and high-performance optimizations.</p>
+                <ul class="achievements">
+                    <li>Engineered the back-end using <strong>Spring Boot 3</strong> with Layered Architecture and
+                        Spring Data JPA.</li>
+                    <li>Implemented <strong>Spring Security</strong> (JWT, RBAC) and Redis-based security mechanisms.
+                    </li>
+                    <li>Applied <strong>Redis</strong> for caching, OTP verification, rate limiting, and distributed
+                        locking.</li>
+                    <li>Integrated <strong>VNPay</strong> payment gateway with secure webhook handling (HMAC SHA512).
+                    </li>
+                    <li>Containerized application and deployed using <strong>Docker</strong> and <strong>GitHub
+                            Actions</strong> (CI/CD).</li>
+                    <li>Set up basic monitoring with Prometheus and Grafana.</li>
+                </ul>
+                <div class="team-members">
+                    <strong><i class="fas fa-users"></i> Team:</strong> Dang Minh Hao (Me), Tran Trung Kien, Nguyen Ba
+                    Vu Khoa, Vu Van Minh.
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-title">
+                        <h3>Ecommerce - Clothes Store</h3>
+                        <div class="tech-stack">Spring Boot • ReactJS • Material-UI • MySQL • Thymeleaf</div>
+                    </div>
+                    <span class="project-role">Full-stack Developer</span>
+                </div>
+                <p>Comprehensive e-commerce solution for clothing retail with a user-friendly interface.</p>
+                <ul class="achievements">
+                    <li>Developed backend architecture using <strong>Spring Boot</strong> for rapid application
+                        development.</li>
+                    <li>Built a responsive front-end using <strong>ReactJS</strong> and <strong>Material-UI</strong>.
+                    </li>
+                    <li>Utilized Thymeleaf for server-side rendering and dynamic content generation.</li>
+                    <li>Collaborated on system analysis and database modeling.</li>
+                </ul>
+                <div class="team-members">
+                    <strong><i class="fas fa-users"></i> Team:</strong> Dang Minh Hao (Me), Nguyen Phan Tuan Kiet, Pham
+                    Van Kiet.
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Dang Minh Hao. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

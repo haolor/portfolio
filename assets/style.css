@@ -1,0 +1,243 @@
+:root {
+    --primary-color: #2563eb;
+    /* Blue core */
+    --secondary-color: #1e293b;
+    /* Dark slate */
+    --text-color: #334155;
+    /* Slate text */
+    --bg-color: #f8fafc;
+    /* Light gray bg */
+    --card-bg: #ffffff;
+    /* White card */
+    --hover-color: #1d4ed8;
+    /* Darker blue */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+header .title {
+    font-size: 1.3rem;
+    opacity: 0.95;
+    font-weight: 500;
+}
+
+header .subtitle {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.social-links {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px);
+    background: var(--primary-color);
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+/* Sections */
+section {
+    margin-bottom: 4rem;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+h2 {
+    border-left: 5px solid var(--primary-color);
+    padding-left: 15px;
+    margin-bottom: 1.5rem;
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Skills Tags */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-tag {
+    background: #e2e8f0;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    transition: background 0.3s;
+}
+
+.skill-tag:hover {
+    background: #cbd5e1;
+}
+
+.skill-tag.highlight {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.skill-tag.highlight:hover {
+    background-color: var(--hover-color);
+}
+
+/* Project Cards */
+.project-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--primary-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-title h3 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+}
+
+.project-role {
+    font-size: 0.9rem;
+    color: #64748b;
+    font-style: italic;
+    background: #f1f5f9;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.tech-stack {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.team-members {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #cbd5e1;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+ul.achievements {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+ul.achievements li {
+    margin-bottom: 0.5rem;
+    color: #475569;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #64748b;
+    font-size: 0.9rem;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 2rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    .project-header {
+        flex-direction: column;
+    }
+
+    .project-role {
+        margin-top: 5px;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+}
