@@ -94,8 +94,8 @@ The entire system (Database, Redis, Backend, Frontend) can be spun up with a sin
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/haolor/food-ordering-ecommerce.git
-cd food-ordering-ecommerce
+git clone https://github.com/haolor/ktpm-team.git
+cd ktpm-team
 
 # 2. Build and run containers
 docker-compose up --build -d
@@ -133,10 +133,10 @@ This project was developed by a team of 4 dedicated engineers:
 
 | Name | Role | GitHub |
 |:---:|:---:|:---:|
-| Dang Minh Hao (Me) | Backend Lead & System Design | @haolor |
-| Tran Trung Kien | Frontend Developer | - |
-| Nguyen Ba Vu Khoa | Backend Developer | - |
-| Vu Van Minh | DevOps & Testing | - |
+| Dang Minh Hao (Me) | Backend Developer & System Design | @haolor |
+| Tran Trung Kien | Backend Lead | @kunengineer |
+| Nguyen Ba Vu Khoa | Frontend Developer | @nguyenbavukhoa |
+| Vu Van Minh | DevOps & Testing | @VanMinh2410 |
 
 ---
 
