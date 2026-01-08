@@ -79,3 +79,25 @@ graph TD
     API -->|Cache/Lock| Cache[(Redis)]
     API -->|Payment| VNPay[VNPay Gateway]
     API -->|Images| Cloud[Cloudinary]
+
+⚡ Installation & SetupPrerequisitesJava 17+Node.js & npmDocker & Docker ComposeOption 1: Quick Start with Docker (Recommended)The entire system (Database, Redis, Backend, Frontend) can be spun up with a single command.Bash# 1. Clone the repository
+git clone [https://github.com/haolor/food-ordering-ecommerce.git](https://github.com/haolor/food-ordering-ecommerce.git)
+cd food-ordering-ecommerce
+
+# 2. Build and run containers
+docker-compose up --build -d
+Option 2: Manual Setup1. Backend SetupBashcd backend
+# Update application.properties with your DB/Redis/Cloudinary credentials
+./mvnw clean install
+./mvnw spring-boot:run
+2. Frontend SetupBashcd frontend
+npm install
+npm run dev
+🧪 TestingUnit Testing: JUnit 5 integration for Service and Repository layers.API Testing: Postman collection available in /docs/postman_collection.json.👥 ContributorsThis project was developed by a team of 4 dedicated engineers:NameRoleGitHubDang Minh Hao (Me)Backend Lead & System Design@haolorTran Trung KienFrontend DeveloperNguyen Ba Vu KhoaBackend DeveloperVu Van MinhDevOps & Testing📝 LicenseThis project is licensed under the MIT License - see the LICENSE file for details.<p align="center">Built with ❤️ by Dang Minh Hao</p>
+### Những điểm cần lưu ý để file này "chạy" tốt:
+
+1.  **Ảnh Demo:** Phần `![Home](...)` là các placeholder. Bạn **bắt buộc** phải chụp màn hình dự án (3 tấm: Trang chủ, Giỏ hàng, Trang Admin), lưu vào folder `/images` trong code rồi thay link vào đó. Nếu không có ảnh, người ta sẽ lười đọc.
+2.  **Sơ đồ Mermaid:** Đoạn code `mermaid` mình viết ở trên sẽ tự động vẽ ra sơ đồ kiến trúc nếu GitHub hiển thị. Nó giúp bạn trông rất "kỹ thuật" và hiểu sâu về hệ thống.
+3.  **Thay Link Git:** Ở đoạn `git clone`, nhớ thay bằng link repo thật của bạn.
+
+Bạn có cần mình viết nốt file `README.md` cho dự án "Ecommerce - Clothes Store" không
